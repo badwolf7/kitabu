@@ -40,7 +40,7 @@ _This is a code challenge for **The League**._
     npm run test
     ```
 
-## Data Collected
+## Data Returned
 
 1.  title
 2.  author
