@@ -1,0 +1,36 @@
+{
+  "name": "kitabu",
+  "version": "1.0.0",
+  "description": "Kitabu, Swahili for book, is an application for reading book files and accessing the data.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node-dev server.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Holly Springsteen",
+  "license": "MIT",
+  "dependencies": {
+    "an-array-of-english-words": "^1.2.0",
+    "chai": "^3.5.0",
+    "cluster": "^0.7.7",
+    "colors": "^1.1.2",
+    "compression": "^1.6.2",
+    "config": "^1.25.1",
+    "ejs": "^2.5.6",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "http-status": "^1.0.1",
+    "properties": "^1.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "mocha": "^3.3.0"
+  }
+}
