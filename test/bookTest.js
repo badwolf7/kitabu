@@ -23,8 +23,10 @@ const expectedContent = {
   created: 'November 29, 2002',
   updated: 'April 18, 2011 [EBook #1661]',
   language: 'English',
-  name: 'adventures-of-sherlock-holmes',
-  filePath: 'books/adventures-of-sherlock-holmes.txt',
+  file: {
+    name: 'adventures-of-sherlock-holmes',
+    path: 'books/adventures-of-sherlock-holmes.txt',
+  },
   chapters: [
     'I. A Scandal in Bohemia',
     'II. The Red-headed League',
@@ -134,8 +136,8 @@ describe('bookParser', () => {
       assert.equal(bookContent.created, expectedContent.created);
       assert.equal(bookContent.updated, expectedContent.updated);
       assert.equal(bookContent.language, expectedContent.language);
-      assert.equal(bookContent.name, expectedContent.name);
-      assert.equal(bookContent.filePath, expectedContent.filePath);
+      assert.equal(bookContent.file.name, expectedContent.file.name);
+      assert.equal(bookContent.file.path, expectedContent.file.path);
       assert.deepEqual(bookContent.chapters, expectedContent.chapters);
       assert.equal(bookContent.wordCount, expectedContent.wordCount);
       assert.equal(bookContent.uniqueWords.count, expectedContent.uniqueWords.count);

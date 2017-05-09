@@ -65,8 +65,10 @@ function parseBook(fileName) {
     created: '',
     updated: '',
     language: '',
-    name: fileName,
-    filePath,
+    file: {
+      name: fileName,
+      path: filePath,
+    },
     chapters: [],
     wordCount: words.length,
     uniqueWords: {

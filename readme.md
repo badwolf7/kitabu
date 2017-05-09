@@ -42,22 +42,34 @@ _This is a code challenge for **The League**._
 
 ## Data Returned
 
-1.  title
-2.  author
-3.  created
-4.  updated
-5.  language
-6.  name
-7.  filePath
-8.  chapters
-9.  wordCount
-10. uniqueWords
-    a.  count
-    b.  topTen (unique words by frequency)
-    c.  topFifty (unique words by frequency)
-11. content
-    a.  string (string format of the book)
-    b.  array (an array of individual lines in the book)
+```javascript
+{
+  title,
+  author,
+  created,
+  updated,
+  language,
+  file: {
+    name,
+    path,
+  },
+  chapters,
+  // Count of all words in file
+  wordCount,
+  uniqueWords: {
+    count,
+    // Unique words by frequency
+    topTen,
+    topFifty,
+  },
+  content: {
+    // String format of the book
+    string,
+    // An array of individual lines in the book
+    array,
+  },
+}
+```
 
 ## Contributors
 
